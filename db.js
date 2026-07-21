@@ -10,7 +10,7 @@
 //   import { getAll, addRecord, updateRecord, deleteRecord, ... } from './db.js';
 // ============================================================
 
-import { auth, db } from './firebase-config.js';
+import { auth, db } from './firebase-config.js?v=2';
 import {
   ref, get, set, remove
 } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";

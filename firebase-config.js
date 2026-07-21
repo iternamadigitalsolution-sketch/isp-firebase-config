@@ -3,13 +3,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDLMeWgXMTSaAP9qrgLx-SPdX0IReaTOzg",
-  authDomain: "rtrwnet-86437.firebaseapp.com",
-  databaseURL: "https://rtrwnet-86437-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "rtrwnet-86437",
-  storageBucket: "rtrwnet-86437.firebasestorage.app",
-  messagingSenderId: "447566268085",
-  appId: "1:447566268085:web:dac6cde26def589893e0fc"
+  apiKey: "AIzaSyDY_E7M-9ywtlMWbB3B3MnNEM6msK-qrog",
+  authDomain: "teenetmedia-3702f.firebaseapp.com",
+  databaseURL: "https://teenetmedia-3702f-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "teenetmedia-3702f",
+  storageBucket: "teenetmedia-3702f.appspot.com",
+  messagingSenderId: "322300324982",
+  appId: "1:322300324982:web:5eefbe8c02d70869268357"
 };
 
 import { initializeApp as initializeAppSecondary } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";

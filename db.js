@@ -24,7 +24,7 @@ import {
 // cloud name dari Cloudinary Dashboard (Settings → Account), jangan
 // biarkan jadi placeholder karena upload akan selalu gagal.
 // ============================================================
-const CLOUDINARY_CLOUD_NAME = 'xxgfnpik'; // TODO: konfirmasi sama dengan Cloudinary Dashboard kamu
+const CLOUDINARY_CLOUD_NAME = 'udsougfj'; // TODO: konfirmasi sama dengan Cloudinary Dashboard kamu
 const CLOUDINARY_PRESET_KTP = 'foto_ktp_preset';     // Unsigned, Delivery type: Authenticated (privat)
 const CLOUDINARY_PRESET_UMUM = 'bukti_umum_preset';  // Unsigned, Delivery type: Upload (publik)
 

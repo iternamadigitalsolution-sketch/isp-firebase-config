@@ -26,12 +26,12 @@ import {
 // ============================================================
 const CLOUDINARY_CLOUD_NAME = 'udsougfj'; // TODO: konfirmasi sama dengan Cloudinary Dashboard kamu
 const CLOUDINARY_PRESET_KTP = 'foto_ktp_preset';     // Unsigned, Delivery type: Authenticated (privat)
-const CLOUDINARY_PRESET_UMUM = 'dokumen-buktitrf-rtrwnet';  // Unsigned, Delivery type: Upload (publik)
+const CLOUDINARY_PRESET_UMUM = 'dokumen-buktitrf-rtrwnet';  // Unsigned, Delivery type: Authenticated (privat)
 
 // Pilih preset yang tepat berdasarkan folder tujuan, supaya foto KTP
-// selalu lewat preset privat dan bukti transfer selalu lewat preset publik.
+// selalu lewat preset privat dan bukti transfer selalu lewat preset privat juga.
 function pilihPreset(folder) {
-  if (folder === 'foto_ktp') return CLOUDINARY_PRESET_KTP;
+  if (folder === 'dokumen-ktp-rtrwnet') return CLOUDINARY_PRESET_KTP;
   return CLOUDINARY_PRESET_UMUM;
 }
 
@@ -96,7 +96,7 @@ export async function deleteRecord(node, id) {
 // Dipakai untuk Foto KTP (Pendaftaran) & Bukti Transfer (Pembayaran)
 // Preset dipilih otomatis berdasarkan `folder`:
 //   folder === 'foto_ktp'  -> foto_ktp_preset (privat/Authenticated)
-//   folder lainnya         -> bukti_umum_preset (publik)
+//   folder lainnya         -> dokumen-buktitrf-rtrwnet (privat/Authenticated)
 // ============================================================
 export async function uploadBase64ToCloudinary(base64, folder, presetName) {
   const url = 'https://api.cloudinary.com/v1_1/' + CLOUDINARY_CLOUD_NAME + '/image/upload';

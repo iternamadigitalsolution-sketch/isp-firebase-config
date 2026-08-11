@@ -26,7 +26,7 @@ import {
 // ============================================================
 const CLOUDINARY_CLOUD_NAME = 'udsougfj'; // TODO: konfirmasi sama dengan Cloudinary Dashboard kamu
 const CLOUDINARY_PRESET_KTP = 'foto_ktp_preset';     // Unsigned, Delivery type: Authenticated (privat)
-const CLOUDINARY_PRESET_UMUM = 'bukti_umum_preset';  // Unsigned, Delivery type: Upload (publik)
+const CLOUDINARY_PRESET_UMUM = 'dokumen-buktitrf-rtrwnet';  // Unsigned, Delivery type: Upload (publik)
 
 // Pilih preset yang tepat berdasarkan folder tujuan, supaya foto KTP
 // selalu lewat preset privat dan bukti transfer selalu lewat preset publik.
